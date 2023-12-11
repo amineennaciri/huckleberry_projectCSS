@@ -5,8 +5,68 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 /* Add styles here! */
+/*styling header*/
+header {
+  height: 50%;
+  padding-top: 50px;
+  padding-left: 180px;
+}
+.intro-chunk p:first-of-type{
+  width: 370px;
+  line-height: 1.8;
+}
+.intro-chunk p:first-of-type strong{
+  color:hsl(160deg, 100%, 30%);
+}
+.intro-chunk p:last-of-type{
+  width: 270px;
+  line-height: 1.8;
+}
+/*styling main*/
+main {
+  height: 50%;
+  padding-left: 180px;
+  padding-top: 50px;
+  background-color:hsl(0deg, 0%, 40%);
+  border-top: 10px solid hsl(0deg, 0%, 60%);
+}
+
+.card {
+  width: 45%;
+  padding: 20px;
+  border-bottom: 10px solid hsl(0deg, 0%, 60%);
+  background-color:hsl(0deg, 0%, 100%);
+}
+
+.card h2 {
+  background-color:hsl(45deg, 100%, 50%);
+  border-bottom: 10px solid hsl(45deg, 100%, 40%);
+  width: fit-content;
+  padding: 20px;
+  margin-left: -30px;
+  margin-top: -15px;
+}
+
+
+/* tablet layout */
+@media (max-width: 768px) {
+  
+}
+
+/* mobile layout */
+@media (max-width: 390px) {
+  header{
+    padding: 0;
+    padding-left: 20px;
+  }
+  .intro-chunk p{
+    width: 250px;
+    line-height: 1.8;
+  }
+}
